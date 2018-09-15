@@ -1,0 +1,526 @@
+/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+html, body{
+    margin: 0;
+    padding: 0;
+
+}
+
+#home{
+    position: relative;
+    background: linear-gradient(rgba(0,0,0, 0.85), rgba(0,0,0, 0.85)), url("../img/home.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    min-height: 80vh;
+    background-attachment: fixed;
+}
+
+#service{
+    position: relative;
+    background: linear-gradient(rgba(0,0,0, 0.85), rgba(0,0,0, 0.85)), url("../img/service1.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    min-height: 80vh;
+    background-attachment: fixed;
+}
+
+#project{
+    position: relative;
+    background: linear-gradient(rgba(0,0,0, 0.85), rgba(0,0,0, 0.85)), url("../img/project.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    min-height: 80vh;
+    background-attachment: fixed;
+}
+
+#news{
+    position: relative;
+    background: linear-gradient(rgba(0,0,0, 0.85), rgba(0,0,0, 0.85)), url("../img/news.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    min-height: 80vh;
+    background-attachment: fixed;
+}
+
+#career{
+    position: relative;
+    background: linear-gradient(rgba(0,0,0, 0.85), rgba(0,0,0, 0.85)), url("../img/career.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    min-height: 80vh;
+    background-attachment: fixed;
+}
+
+#about{
+    position: relative;
+    background: linear-gradient(rgba(0,0,0, 0.85), rgba(0,0,0, 0.85)), url("../img/about.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    min-height: 80vh;
+    background-attachment: fixed;
+}
+
+
+.jumbotron{
+    background: none;
+}
+
+#section-jumbotron{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color: black;
+}
+
+.nav-item li a{
+    color: white;
+}
+
+.nav-item li a:hover{
+    color: gray;
+}
+
+
+#section-description{
+    margin-bottom: 70px;
+}
+
+
+
+.officials{
+    position: relative;
+    background: linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0, 0.7)), url("../img/officials.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    min-height: 55vh;
+    background-attachment: fixed;
+}
+
+
+.members{
+    position: relative;
+    background: linear-gradient(rgba(0,0,0, 0.85), rgba(0,0,0, 0.85)), url("../img/members.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    min-height: 95vh;
+    background-attachment: fixed;
+}
+
+
+.navbar-light a .navbar-text {
+    color: green;
+}
+
+.navbar-light a:hover .navbar-text {
+    color: blue;
+}
+
+.navbar-light .active a .navbar-text  {
+    color: black !important;
+}
+
+a.nav-link{
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+
+.card{
+    box-shadow: 0px 0px 0px 0px;
+}
+
+
+
+
+
+/*------------------------------------*\
+    Team
+\*------------------------------------*/
+.team {
+    position: relative;
+    background-color: #F4F4F4;
+    padding: 20px;
+    margin: 15px 0px;
+    color: black;
+    border-radius: 10px;
+}
+.team::after {
+    content: "";
+    background-color: #1C1D21;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 0%;
+    z-index: 1;
+    -webkit-transition: 0.2s height;
+    transition: 0.2s height;
+    border-radius: 10px;
+}
+.team:hover:after {
+    height: 100%;
+}
+.team-img {
+    position: relative;
+    margin-bottom: 20px;
+    z-index: 11;
+
+}
+.team-img > img {
+    width: 100%;
+    border-radius: 10px;
+    height: 200px;
+}
+.team .overlay {
+    background: #1C1D21;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    -webkit-transition: 0.2s opacity;
+    transition: 0.2s opacity;
+}
+.team:hover .overlay {
+    opacity: 0.6;
+}
+.team .team-content {
+    text-align: center;
+    position: relative;
+    z-index: 11;
+}
+.team .team-content h5 {
+    margin-bottom: 10px;
+    -webkit-transition: 0.2s color;
+    transition: 0.2s color;
+}
+.team .team-content span {
+    font-size: 14px;
+    text-transform: uppercase;
+    -webkit-transition: 0.2s color;
+    transition: 0.2s color;
+}
+.team:hover .team-content h5 {
+    color: #FFF;
+}
+.team:hover .team-content span {
+    color: #6195FF;
+}
+.team .team-social {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: 0.2s opacity;
+    transition: 0.2s opacity;
+}
+.team .team-social a {
+    display: block;
+    line-height: 40px;
+    width: 40px;
+    text-align: center;
+    background-color: #6195FF;
+    color: #FFF;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+.team:hover .team-social {
+    opacity: 1;
+}
+
+
+
+/*------------------------------------*\
+    Back to top
+\*------------------------------------*/
+
+.scrollTop {
+  position: fixed;
+  right: 1%;
+  bottom: 20px;
+  background-color: #17A2B8;
+  border-radius: 100%;
+  opacity: 0;
+  transition: all 0.4s ease-in-out 0s;
+  z-index: 9999999999;
+}
+
+.scrollTop a {
+  font-size: 18px;
+  color: #80A9FE;
+}
+
+
+/* =============PreLoader CSS ======================= */
+
+.flex-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+
+.dots .dot {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  margin: 0 10px 0 10px;
+  border-radius: 50%;
+  background: #6195FF;
+  -webkit-animation: dot-dot-dot 1.4s linear infinite;
+  animation: dot-dot-dot 1.4s linear infinite;
+}
+
+.dots .dot:nth-child(2) {
+  animation-delay: .2s;
+}
+
+.dots .dot:nth-child(3) {
+  animation-delay: .4s;
+}
+
+@keyframes dot-dot-dot {
+  0%, 60%, 100% {
+    -webkit-transform: initial;
+      -ms-transform: initial;
+        transform: initial;
+  }
+  30% {
+    -webkit-transform: translateY(-25px);
+      -ms-transform: translateY(-25px);
+        transform: translateY(-25px);
+  }
+}
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
